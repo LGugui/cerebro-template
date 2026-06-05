@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NonInteractive -File \".claude/hooks/pre-tool-validator.ps1\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NonInteractive -File \".claude/scripts/auto-commit-note.ps1\""
+          }
+        ]
+      }
+    ]
+  }
+}

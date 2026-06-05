@@ -1,0 +1,27 @@
+# Configurações locais com segredos
+.claude/settings.local.json
+.claude.json
+.env
+*.env
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e temporários
+99_System/logs/
+99_System/tmp/
+*.log
+
+# Dados pessoais (nunca commitar)
+99_System/TAREFAS.md
+99_System/KANBAN.md
+99_System/QUEM-SOU.md
+99_System/equipes/
+memory/
